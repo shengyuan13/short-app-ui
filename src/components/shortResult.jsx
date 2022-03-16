@@ -10,7 +10,7 @@ function ShortResult({ inputValue }) {
     try {
       const response = await axios({
         method: "post",
-        url: "http://localhost:3000/short_urls.json",
+        url: `${process.env.REACT_APP_BASE_API_URL}short_urls.json`,
         headers: {
           accept: "application/json",
         },
@@ -18,7 +18,9 @@ function ShortResult({ inputValue }) {
           full_url: `${inputValue}`,
         },
       });
-      setShortenLink(` http://localhost:3000/${response.data.shorted_url}`);
+      setShortenLink(
+        ` ${process.env.REACT_APP_BASE_API_URL}${response.data.shorted_url}`
+      );
     } catch (error) {
       setErrorResponse(true);
     }
@@ -45,7 +47,7 @@ function ShortResult({ inputValue }) {
     <>
       {shortenLink && (
         <div className="alert alert-success" role="alert">
-          <a href={shortenLink} target="_blank">
+          <a href={shortenLink} target="_blank" rel="noreferrer">
             {shortenLink}
           </a>
         </div>

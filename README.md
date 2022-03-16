@@ -5,6 +5,7 @@ This will be a React app that will be used as the web app for the URL shortener 
 ## Instruction
 
 The URL shortener API: https://github.com/shengyuan13/short-app, should be running on port 3000.
+If the back-end API app is running on a different port, we must change 'REACT_APP_BASE_API_URL' value on the .env file.
 
 The web app for the URL shortener(this React app), will be running on port 3001.
 
@@ -13,6 +14,8 @@ The web app for the URL shortener(this React app), will be running on port 3001.
 Have the URL shortener API: https://github.com/shengyuan13/short-app up and running (follow the README)
 
 To Start this app run:
+
+    npm i
 
     PORT=3001 npm start
 
