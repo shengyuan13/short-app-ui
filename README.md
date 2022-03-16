@@ -18,7 +18,7 @@ To Start this app run:
 
 ## Functionalities
 
--View of TOP 100 most frequently accessed URLs.
--Form for inputting URLs into the system.
--Inputting a valid URL should result in displaying the new shortened URL to the user.
--Inputting an invalid URL should result in displaying errors to the user.
+* View of TOP 100 most frequently accessed URLs.
+* Form for inputting URLs into the system.
+* Inputting a valid URL should result in displaying the new shortened URL to the user.
+* Inputting an invalid URL should result in displaying errors to the user.
